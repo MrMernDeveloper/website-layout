@@ -8,19 +8,29 @@
 </head>
 <style>
     .container{
+        height: 500px;
         border: 2px dotted black;
+        display: flex;
+        align-items: stretch;
+        /* justify-content: center;
+        align-items:center;
+        flex-wrap: wrap; */
     }
     .box{
         border: 3px dashed peru;
         width: 100px;
-        height: 100px;
+        
+        font-weight: 700;
+    }
+    #box-2{
+        flex-grow: 1;
     }
 </style>
 <body>
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">Box-1</div>
+        <div  id="box-2" class="box">Box-2</div>
+        
     </div>
     
 </body>
